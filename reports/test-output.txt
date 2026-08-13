@@ -1,0 +1,38 @@
+
+> poap-events@1.0.0 test
+> hardhat test
+
+No contracts to compile
+
+Running Solidity tests
+
+
+Running Mocha tests
+
+
+  AttendanceBadges
+    deployment
+      ✔ initializes owner, issuer role, ERC-1155 interface, and next token ID
+      ✔ rejects invalid constructor arguments
+    event creation
+      ✔ creates a badge type and exposes its metadata
+      ✔ rejects invalid event creation input
+      ✔ restricts event creation and status changes to the owner
+    issuing badges
+      ✔ allows the owner to issue a POAP and updates attendee reads
+      ✔ allows an owner-granted issuer to issue badges
+      ✔ batch issues one POAP to multiple attendees
+      ✔ rejects invalid issue attempts
+      ✔ enforces max supply for single and batch issue flows
+      ✔ rejects invalid batch issue input
+    admin roles and read validation
+      ✔ grants and revokes issuer permissions
+      ✔ rejects invalid role and read inputs
+      ✔ emits status changes and rejects missing token status updates
+
+
+  14 passing (258ms)
+
+
+14 passing (14 mocha)
+

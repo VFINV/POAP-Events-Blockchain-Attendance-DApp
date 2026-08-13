@@ -1,0 +1,166 @@
+{
+  "contracts": {
+    "contracts/AttendanceBadges.sol:AttendanceBadges": {
+      "sourceName": "contracts/AttendanceBadges.sol",
+      "contractName": "AttendanceBadges",
+      "proxyChain": [],
+      "deployment": {
+        "min": 2563405,
+        "max": 2563405,
+        "avg": 2563405,
+        "median": 2563405,
+        "count": 14,
+        "runtimeSize": 10663
+      },
+      "functions": {
+        "balanceOf": {
+          "min": 24249,
+          "max": 24249,
+          "avg": 24249,
+          "median": 24249,
+          "count": 2
+        },
+        "balanceOfBatch": {
+          "min": 33096,
+          "max": 33096,
+          "avg": 33096,
+          "median": 33096,
+          "count": 1
+        },
+        "batchIssuePOAPs": {
+          "min": 381015,
+          "max": 381015,
+          "avg": 381015,
+          "median": 381015,
+          "count": 1
+        },
+        "createPOAPEvent": {
+          "min": 167228,
+          "max": 194949,
+          "avg": 170000,
+          "median": 167228,
+          "count": 10
+        },
+        "DEFAULT_ADMIN_ROLE": {
+          "min": 21291,
+          "max": 21291,
+          "avg": 21291,
+          "median": 21291,
+          "count": 1
+        },
+        "getCreatedTokenIds": {
+          "min": 26113,
+          "max": 26113,
+          "avg": 26113,
+          "median": 26113,
+          "count": 1
+        },
+        "getHolderPOAPBalances": {
+          "min": 29831,
+          "max": 29831,
+          "avg": 29831,
+          "median": 29831,
+          "count": 1
+        },
+        "getHolderTokenIds": {
+          "min": 26913,
+          "max": 26913,
+          "avg": 26913,
+          "median": 26913,
+          "count": 1
+        },
+        "getPOAPEvent": {
+          "min": 28576,
+          "max": 28576,
+          "avg": 28576,
+          "median": 28576,
+          "count": 4
+        },
+        "grantIssuer": {
+          "min": 48691,
+          "max": 48691,
+          "avg": 48691,
+          "median": 48691,
+          "count": 2
+        },
+        "hasPOAP": {
+          "min": 26527,
+          "max": 26527,
+          "avg": 26527,
+          "median": 26527,
+          "count": 1
+        },
+        "hasRole": {
+          "min": 24354,
+          "max": 24738,
+          "avg": 24642,
+          "median": 24738,
+          "count": 4
+        },
+        "isCreatedToken": {
+          "min": 23695,
+          "max": 23695,
+          "avg": 23695,
+          "median": 23695,
+          "count": 1
+        },
+        "issuePOAP": {
+          "min": 179001,
+          "max": 181333,
+          "avg": 179584,
+          "median": 179001,
+          "count": 4
+        },
+        "ISSUER_ROLE": {
+          "min": 21343,
+          "max": 21343,
+          "avg": 21343,
+          "median": 21343,
+          "count": 2
+        },
+        "nextTokenId": {
+          "min": 23390,
+          "max": 23390,
+          "avg": 23390,
+          "median": 23390,
+          "count": 12
+        },
+        "owner": {
+          "min": 23453,
+          "max": 23453,
+          "avg": 23453,
+          "median": 23453,
+          "count": 1
+        },
+        "revokeIssuer": {
+          "min": 26651,
+          "max": 26651,
+          "avg": 26651,
+          "median": 26651,
+          "count": 1
+        },
+        "setPOAPEventActive": {
+          "min": 27803,
+          "max": 27803,
+          "avg": 27803,
+          "median": 27803,
+          "count": 2
+        },
+        "supportsInterface": {
+          "min": 21905,
+          "max": 21905,
+          "avg": 21905,
+          "median": 21905,
+          "count": 1
+        },
+        "uri": {
+          "min": 26738,
+          "max": 26738,
+          "avg": 26738,
+          "median": 26738,
+          "count": 1
+        }
+      }
+    }
+  }
+}

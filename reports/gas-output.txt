@@ -1,0 +1,77 @@
+
+> poap-events@1.0.0 test:gas
+> hardhat test --gas-stats --gas-stats-json reports/gas-stats.json
+
+
+Compiled 1 Solidity file with solc 0.8.28 (evm target: cancun)
+
+Running Solidity tests
+
+
+Running Mocha tests
+
+
+  AttendanceBadges
+    deployment
+      ✔ initializes owner, issuer role, ERC-1155 interface, and next token ID
+      ✔ rejects invalid constructor arguments
+    event creation
+      ✔ creates a badge type and exposes its metadata
+      ✔ rejects invalid event creation input
+      ✔ restricts event creation and status changes to the owner
+    issuing badges
+      ✔ allows the owner to issue a POAP and updates attendee reads
+      ✔ allows an owner-granted issuer to issue badges
+      ✔ batch issues one POAP to multiple attendees
+      ✔ rejects invalid issue attempts
+      ✔ enforces max supply for single and batch issue flows
+      ✔ rejects invalid batch issue input
+    admin roles and read validation
+      ✔ grants and revokes issuer permissions
+      ✔ rejects invalid role and read inputs
+      ✔ emits status changes and rejects missing token status updates
+
+
+  14 passing (292ms)
+
+
+14 passing (14 mocha)
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                             Gas Usage Statistics                             ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ contracts/AttendanceBadges.sol:AttendanceBadges                              ║
+╟───────────────────────┬─────────┬─────────┬─────────┬─────────┬──────────────╢
+║ Function name         │ Min     │ Average │ Median  │ Max     │ #calls       ║
+╟───────────────────────┼─────────┼─────────┼─────────┼─────────┼──────────────╢
+║ balanceOf             │ 24249   │ 24249   │ 24249   │ 24249   │ 2            ║
+║ balanceOfBatch        │ 33096   │ 33096   │ 33096   │ 33096   │ 1            ║
+║ batchIssuePOAPs       │ 381015  │ 381015  │ 381015  │ 381015  │ 1            ║
+║ createPOAPEvent       │ 167228  │ 170000  │ 167228  │ 194949  │ 10           ║
+║ DEFAULT_ADMIN_ROLE    │ 21291   │ 21291   │ 21291   │ 21291   │ 1            ║
+║ getCreatedTokenIds    │ 26113   │ 26113   │ 26113   │ 26113   │ 1            ║
+║ getHolderPOAPBalances │ 29831   │ 29831   │ 29831   │ 29831   │ 1            ║
+║ getHolderTokenIds     │ 26913   │ 26913   │ 26913   │ 26913   │ 1            ║
+║ getPOAPEvent          │ 28576   │ 28576   │ 28576   │ 28576   │ 4            ║
+║ grantIssuer           │ 48691   │ 48691   │ 48691   │ 48691   │ 2            ║
+║ hasPOAP               │ 26527   │ 26527   │ 26527   │ 26527   │ 1            ║
+║ hasRole               │ 24354   │ 24642   │ 24738   │ 24738   │ 4            ║
+║ isCreatedToken        │ 23695   │ 23695   │ 23695   │ 23695   │ 1            ║
+║ issuePOAP             │ 179001  │ 179584  │ 179001  │ 181333  │ 4            ║
+║ ISSUER_ROLE           │ 21343   │ 21343   │ 21343   │ 21343   │ 2            ║
+║ nextTokenId           │ 23390   │ 23390   │ 23390   │ 23390   │ 12           ║
+║ owner                 │ 23453   │ 23453   │ 23453   │ 23453   │ 1            ║
+║ revokeIssuer          │ 26651   │ 26651   │ 26651   │ 26651   │ 1            ║
+║ setPOAPEventActive    │ 27803   │ 27803   │ 27803   │ 27803   │ 2            ║
+║ supportsInterface     │ 21905   │ 21905   │ 21905   │ 21905   │ 1            ║
+║ uri                   │ 26738   │ 26738   │ 26738   │ 26738   │ 1            ║
+╟───────────────────────┼─────────┼─────────┼─────────┼─────────┼──────────────╢
+║ Deployment            │ Min     │ Average │ Median  │ Max     │ #deployments ║
+╟───────────────────────┼─────────┼─────────┼─────────┼─────────┼──────────────╢
+║                       │ 2563405 │ 2563405 │ 2563405 │ 2563405 │ 14           ║
+╟───────────────────────┼─────────┼─────────┴─────────┴─────────┴──────────────╢
+║ Bytecode size         │ 10663   │                                            ║
+╚═══════════════════════╧═════════╧════════════════════════════════════════════╝
+
+

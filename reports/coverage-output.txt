@@ -1,0 +1,54 @@
+
+> poap-events@1.0.0 test:coverage
+> hardhat test --coverage
+
+
+Compiled 1 Solidity file with solc 0.8.28 (evm target: cancun)
+
+Running Solidity tests
+
+
+Running Mocha tests
+
+
+  AttendanceBadges
+    deployment
+      ✔ initializes owner, issuer role, ERC-1155 interface, and next token ID (40ms)
+      ✔ rejects invalid constructor arguments
+    event creation
+      ✔ creates a badge type and exposes its metadata
+      ✔ rejects invalid event creation input
+      ✔ restricts event creation and status changes to the owner
+    issuing badges
+      ✔ allows the owner to issue a POAP and updates attendee reads
+      ✔ allows an owner-granted issuer to issue badges
+      ✔ batch issues one POAP to multiple attendees
+      ✔ rejects invalid issue attempts
+      ✔ enforces max supply for single and batch issue flows
+      ✔ rejects invalid batch issue input
+    admin roles and read validation
+      ✔ grants and revokes issuer permissions
+      ✔ rejects invalid role and read inputs
+      ✔ emits status changes and rejects missing token status updates
+
+
+  14 passing (382ms)
+
+
+14 passing (14 mocha)
+
+Saved html report to C:\Users\Justin\Portal\code\poap-events\coverage\html
+╔═════════════════════════════════════════════════════════════════════════╗
+║                             Coverage Report                             ║
+╚═════════════════════════════════════════════════════════════════════════╝
+╔═════════════════════════════════════════════════════════════════════════╗
+║ File Coverage                                                           ║
+╟────────────────────────────────┬────────┬─────────────┬─────────────────╢
+║ File Path                      │ Line % │ Statement % │ Uncovered Lines ║
+╟────────────────────────────────┼────────┼─────────────┼─────────────────╢
+║ contracts\AttendanceBadges.sol │ 100.00 │ 100.00      │ -               ║
+╟────────────────────────────────┼────────┼─────────────┼─────────────────╢
+║ Total                          │ 100.00 │ 100.00      │                 ║
+╚════════════════════════════════╧════════╧═════════════╧═════════════════╝
+
+
